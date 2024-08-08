@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - M.S.C</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mario Miranda Campos</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#highlightedprojects">Project Highlights</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mario Miranda Campos</div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#highlightedprojects" onclick="toggleMenu()">Project Highlights</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#contactme" onclick="toggleMenu()">Contact Me</a></li>
+            </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/IM_Grad - Copy.jpg" alt="Mario's profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hey, I'm</p>
+            <h1 class="title">Mario Miranda Campos</h1>
+            <p class="section__text__p2">An Aspiring Software Engineer</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/Mario_Resume.pdf')"
+                >
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contactme'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img
+                    src="./assets/github.png"
+                    alt="My GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/Mario-1150'"
+                />
+                <img 
+                    src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/mariomiranda115/'"
+                />
+            </div>
+        </div>
+    </section>
+    <br>
+
+    </br>
+    <section id="about">
+        <p class="section__text__p1">Getting To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                    src="./assets/IMG_0298.jpg"
+                    alt="Profile Picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/portfolio.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+ Years <br/>Professional Experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/mortarboard.png"
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.Sc. Statistics<br/>B.A. Economics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm an eager and versatile professional who enjoys taking on new challenges.
+                        Currently, I am a volunteer in software development within the Latinos in Finance (LIF) Membership Committee where
+                        I'm working on building a CRM feature for our data analytics committee and a web application for our 2000+ members.
+                        Additionally, I work as a Financial Analyst at PFM Financial Advisors LLC in San Francisco, CA.
+                        <br> 
+                        </br>
+                        Previously, I gained valuable product management experience as a Summer Analyst ('23) in the Securities Services & Digital team at BNY Mellon 
+                        in their New York CIty office (great adventure period in my undergraduate career) In this role, I contributed to the 
+                        Digital Assets Platform scope of work, focusing on GAP analysis for wallet security and blockchain features, developing system diagrams for cryptocurrency workflows
+                        and participating in sprint cycle stand-up meetings. 
+                        <br>
+                        </br>
+                        I'm deeply passionate about leveraging my skills in FinTech, product management, and software development
+                        to drive innovative solutions to complex and often interconnected problems. I'm currently aspiring to contribute towards software engineering teams
+                        as a junior member! Please feel free to reach out and connect!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow-down-sign-to-navigate.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#highlightedprojects'"
+        />
+    </section>
+    <br>
+    </br>
+    <section id="highlightedprojects">
+        <p class="section__text__p1">Browse My Recent Works</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/coming-soon.png"
+                  alt="project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">___</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/original.png"
+                  alt="FluentDocs"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">FluentDocs</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/manik-sethi/FluentDocs'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://devpost.com/software/davis'"
+                >
+                  DevPost
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/fcfwebscrap.png"
+                  alt="Webscraping FCF with Python"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Fundamental Analysis w/ Python</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Mario-1150/A-Fundamental-Analysis-Web-Scraping-Project-on-Energy'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+            src="./assets/arrow-down-sign-to-navigate.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#highlightedprojects'"
+        />
+    </section>
+    <section id="experience">
+        <h1 class="title">My Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/check-mark.png"
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>R</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Jira</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full Stack Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Django</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/check-mark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>APIs</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow-down-sign-to-navigate.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Connect with Me</p>
+        <h1 class="title">Contact Me Here</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png"
+                    alt="email icon"
+                    class="icon contract-icon email-icon"
+                />
+                <p><a href="mailto:mariomir1150@gmail.com">mariomir1150@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <p>Copyright &#169; 2024 Mario Miranda Campos. All Rights Rserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
